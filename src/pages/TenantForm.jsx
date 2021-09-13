@@ -25,6 +25,7 @@ const TenantForm = ({ handleProgress, handleChange }) => {
         onBlur={handleProgress}
         onChange={handleChange}
         placeholder="Email adresss"
+        default="Joe@gmail.com"
       />
       <br />
       <input

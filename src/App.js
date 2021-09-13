@@ -48,6 +48,7 @@ class App extends Component {
   handleRadio = (salary) => {
     this.setState({ salary: salary });
   };
+
   render() {
     return (
       <div className="container">

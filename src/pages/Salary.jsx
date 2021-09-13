@@ -7,6 +7,7 @@ const Salary = ({ handleProgress, handleChange }) => {
   const setSlary = (salary) => {
     setValue(salary);
     handleChange(salary);
+    handleProgress(salary);
   };
   return (
     <div className="salary mt-5">

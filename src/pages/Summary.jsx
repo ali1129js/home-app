@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import SalaryIndic from "./SalaryIndic";
 const Summary = ({ state: { fname, lname, email, phone, salary } }) => {
   return (
     <div className="summary">
@@ -8,8 +8,8 @@ const Summary = ({ state: { fname, lname, email, phone, salary } }) => {
       <div className="name">
         {fname} {lname}
       </div>
-      <h3>{email}</h3>
-      <div className="">Your Income is {salary}</div>
+      <div>{email}</div>
+      <SalaryIndic salary={salary} />
       <Link to="/salary">Back</Link>
     </div>
   );
