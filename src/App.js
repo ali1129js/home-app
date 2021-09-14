@@ -3,7 +3,7 @@
 
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Salary from "./pages/Salary";
+import Salary from "./pages/Radio";
 import Summary from "./pages/Summary";
 import TenantForm from "./pages/TenantForm";
 import ProgressBar from "./ProgressBar/ProgressBar";
@@ -48,8 +48,8 @@ class App extends Component {
   handleChange = (e) => {
     this.setState({ [e.target.id]: e.target.value });
   };
-  handleRadio = (salary) => {
-    this.setState({ salary: salary });
+  handleRadio = (e) => {
+    this.setState({ salary: e.target.value });
   };
 
   render() {
