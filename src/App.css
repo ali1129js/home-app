@@ -1,10 +1,25 @@
-.container {
-  display: grid;
-  place-items: center;
+a {
+  text-decoration: none;
+}
+input[type="text"],
+[type="email"] {
+  margin: 15px;
+}
+input[type="radio"] {
+  margin: 10px;
 }
 
-input[type="text"],
-[type="email"],
-[type="number"] {
-  margin: 15px;
+.tenants,
+.summary,
+.radio {
+  width: 350px;
+  margin: 0px;
+  padding: 50px;
+  border: 1px solid red;
+  background: #82ccdd;
+  box-shadow: 5px 5px 5px 5px teal;
+}
+.prog {
+  padding: 50px;
+  margin-left: 100px;
 }

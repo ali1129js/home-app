@@ -35,7 +35,7 @@ const TenantForm = ({ handleProgress, handleChange }) => {
         placeholder="Phone Number"
       />
       <br />
-      <button className="btn btn-info mt-4">
+      <button className="btn btn-info m-3">
         <Link to="/salary">Next</Link>
       </button>
     </div>

@@ -10,11 +10,11 @@ const Radio = ({ handleChange, handleProgress }) => {
     "Mehr als 4000",
   ];
   return (
-    <div className="">
+    <div className="radio">
       <div className="btn-group-vertical">
-        PLease select your income:
-        {salaries.map((sal) => (
-          <div>
+        <h4>Please select your income:</h4>
+        {salaries.map((sal, i) => (
+          <div key={i}>
             <input
               type="radio"
               name="salaryvalues"
@@ -26,12 +26,11 @@ const Radio = ({ handleChange, handleProgress }) => {
           </div>
         ))}
       </div>
-
-      <div className="">
-        <button type="button" className="btn btn-info">
-          <Link to="/">back</Link>
+      <div className="m-1">
+        <button className="btn btn-info m-3">
+          <Link to="/">Back</Link>
         </button>
-        <button type="button" className="btn btn-info">
+        <button className="btn btn-info m-3">
           <Link to="/summary">Next</Link>
         </button>
       </div>
