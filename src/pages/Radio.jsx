@@ -12,7 +12,7 @@ const Radio = ({ handleChange, handleProgress }) => {
   return (
     <div className="radio">
       <div className="btn-group-vertical">
-        <h4>Please select your income:</h4>
+        <h4>Please select income:</h4>
         {salaries.map((sal, i) => (
           <div key={i}>
             <input

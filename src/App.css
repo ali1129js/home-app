@@ -1,12 +1,10 @@
-a {
-  text-decoration: none;
+.container {
+  display: flex;
 }
 input[type="text"],
-[type="email"] {
+[type="email"],
+[type="radio"] {
   margin: 15px;
-}
-input[type="radio"] {
-  margin: 10px;
 }
 
 .tenants,
@@ -14,12 +12,15 @@ input[type="radio"] {
 .radio {
   width: 350px;
   margin: 0px;
-  padding: 50px;
+  padding: 30px;
   border: 1px solid red;
   background: #82ccdd;
   box-shadow: 5px 5px 5px 5px teal;
 }
 .prog {
   padding: 50px;
-  margin-left: 100px;
+  margin: 100px 0px 0px 50px;
+}
+.summary div {
+  margin: 20px;
 }
