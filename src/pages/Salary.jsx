@@ -1,18 +1,20 @@
+//Radio group component from Ant-Design
+
 import React, { useState } from "react";
 import { Radio, Space } from "antd";
 import { Link } from "react-router-dom";
 
 const Salary = ({ handleProgress, handleChange }) => {
   const [value, setValue] = useState(0);
-  const setSlary = (salary) => {
+  const setSalary = (salary) => {
     setValue(salary);
     handleChange(salary);
-    handleProgress(salary);
+    handleProgress();
   };
   return (
-    <div className="salary mt-5">
+    <div className="salary">
       <h4>Please Select one </h4>
-      <Radio.Group value={value} onChange={(e) => setSlary(e.target.value)}>
+      <Radio.Group value={value} onChange={(e) => setSalary(e.target.value)}>
         <Space direction="vertical">
           <Radio value={1}>0 - 1.000</Radio>
           <Radio value={2}>1.000 - 2.000</Radio>

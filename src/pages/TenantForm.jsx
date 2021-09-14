@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const TenantForm = ({ handleProgress, handleChange }) => {
   return (
-    <div className="tenants mt-5">
+    <div className="tenants">
       <h4>Please fill in all fields:</h4>
       <input
         type="text"
@@ -25,7 +25,6 @@ const TenantForm = ({ handleProgress, handleChange }) => {
         onBlur={handleProgress}
         onChange={handleChange}
         placeholder="Email adresss"
-        default="Joe@gmail.com"
       />
       <br />
       <input

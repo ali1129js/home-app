@@ -1,8 +1,10 @@
+//class Component
+//Global State
+
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Salary from "./pages/Salary";
 import Summary from "./pages/Summary";
-
 import TenantForm from "./pages/TenantForm";
 import ProgressBar from "./ProgressBar/ProgressBar";
 
@@ -42,6 +44,7 @@ class App extends Component {
     this.setState({ progress: progress });
   };
 
+  //update state from input
   handleChange = (e) => {
     this.setState({ [e.target.id]: e.target.value });
   };
@@ -50,10 +53,10 @@ class App extends Component {
   };
 
   render() {
+    const { progress } = this.state;
     return (
       <div className="container">
         <BrowserRouter>
-          <ProgressBar percent={this.state.progress} />
           <Switch>
             <Route exact path="/">
               <TenantForm
@@ -71,6 +74,7 @@ class App extends Component {
               <Summary state={this.state} />
             </Route>
           </Switch>
+          <ProgressBar percent={progress} />
         </BrowserRouter>
       </div>
     );

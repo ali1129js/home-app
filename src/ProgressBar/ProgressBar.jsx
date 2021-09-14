@@ -1,12 +1,16 @@
+// Ant design progress Component, changed to circle
+// Progress is updated by percentage from props
+
 import React from "react";
 import { Progress } from "antd";
 
 const ProgressBar = ({ percent }) => (
-  <div className="prog mt-5">
+  <div className="prog">
     <Progress
+      type="circle"
       strokeColor={{
-        from: "#108ee9",
-        to: "#87d068",
+        "0%": "#108ee9",
+        "100%": "#87d068",
       }}
       percent={percent}
       status="active"
